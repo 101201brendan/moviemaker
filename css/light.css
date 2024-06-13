@@ -1,20 +1,43 @@
-body{
+/* css/light.css */
+
+body {
     background-image: url(../media/light/background.jpeg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
-.droids{
+.buttons {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
-    flex-direction: column;
-    margin-top: 400px;
-    width: 200px;    
+    gap: 10px;
     
 }
 
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.droids {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    margin-left: 10px;
+    width: 200px;    
+}
+
+.droids img {
+    margin-bottom: 30px; /* Add space between the droids */
+}
+
 .droids img:hover {
-transform: scale(1.5);
+    transition: all 0.5s ease-in-out;
+    transform: scale(1.5);
 }
 
 .popup {
@@ -25,15 +48,31 @@ transform: scale(1.5);
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 90%;
+    max-height: 90%;
 }
 
 .popup-content {
-    display: block;
-    margin: auto;
-    max-width: 90%;
+    max-width: 60%;
     max-height: 90%;
+    object-fit: contain; /* Ensures the image scales properly */
+}
+
+.popup-text {
+    max-width: 40%;
+    margin-left: 20px;
+    color: black; /* Text color */
 }
 
 #close {

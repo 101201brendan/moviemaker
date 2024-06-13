@@ -1,4 +1,4 @@
-// script.js
+// js/light.js
 document.addEventListener('DOMContentLoaded', function () {
     const thumbnails = document.querySelectorAll('.thumbnail');
     const popup = document.getElementById('popup');
@@ -7,8 +7,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
     thumbnails.forEach(thumbnail => {
         thumbnail.addEventListener('click', function () {
-            popup.style.display = 'block';
-            popupImg.src = this.src; // Gebruik dezelfde bron voor de popup afbeelding
+            popup.style.display = 'flex';
+            popupImg.src = this.src;
         });
     });
 

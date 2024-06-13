@@ -8,10 +8,14 @@
     <title>Specs</title>
 </head>
 <body>
+    <div class="buttons">
+        <button onclick="location.href='page1.html'">Spaceships</button>
+        <button onclick="location.href='page2.html'">Landvoertuigen</button>
+    </div>
     <div class="droids">
-        <img src="media/light/droids/R2D2.gif" alt="R2D2" width="200px" height="150px">
-        <img src="media/light/droids/C3P0.gif" alt="C3P0" width="150px" height="150px">
-        <img src="media/light/droids/BD-1.gif" alt="BD-1" width="200px" height="150px">
+        <img src="media/light/droids/R2D2.gif" alt="R2D2" width="300px" height="225px" class="thumbnail">
+        <img src="media/light/droids/C3P0.gif" alt="C3P0" width="200px" height="200px" class="thumbnail">
+        <img src="media/light/droids/BD-1.gif" alt="BD-1" width="300px" height="225px" class="thumbnail">
     </div>
 
     <div class="spaceships">
@@ -22,12 +26,16 @@
         <img src="" alt="">
     </div>
 
-
     <div id="popup" class="popup">
-        <span id="close">&times;</span>
-        <img id="popupImg" class="popup-content">
+        <div class="popup-content-container">
+            <span id="close">&times;</span>
+            <img id="popupImg" class="popup-content">
+            <div class="popup-text">
+                <p>This is some text next to the image in the popup. You can add more content here as needed.</p>
+            </div>
+        </div>
     </div>
 
-<script src="js/light.js"></script>
+    <script src="js/light.js"></script>
 </body>
 </html>
