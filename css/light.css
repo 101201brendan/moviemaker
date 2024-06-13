@@ -1,0 +1,47 @@
+body{
+    background-image: url(../media/light/background.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.droids{
+    display: flex;
+    flex-direction: column;
+    margin-top: 400px;
+    width: 200px;    
+    
+}
+
+.droids img:hover {
+transform: scale(1.5);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.popup-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
