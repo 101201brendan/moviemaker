@@ -51,6 +51,16 @@ body {
     align-items: center;
 }
 
+.light-side a:hover{
+    cursor: url('../media/cursor/green-saber.png') 16 16, auto; 
+
+}
+
+.dark-side a:hover{
+    cursor: url('../media/cursor/red-saber.png') 16 16, auto; 
+
+}
+
 .dark-side,
 .light-side img {
     width: 100%;
