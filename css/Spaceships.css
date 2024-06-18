@@ -69,7 +69,7 @@ button {
 }
 
 .popup-text {
-    max-width: 40%;
+    max-width: 100%;
     margin-left: 20px;
     color: rgb(11, 155, 199); /* Text color */
     border: solid 2px;
