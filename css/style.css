@@ -36,10 +36,10 @@ body {
 .choose-side img {
     height: 110%;
     transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
+}
 
-    &:hover {
-        transform: scale(1.2);
-    }
+.choose-side img:hover {
+    transform: scale(1.2);
 }
 
 .dark-side,
@@ -51,17 +51,15 @@ body {
     align-items: center;
 }
 
-.light-side a:hover{
+.light-side a:hover {
     cursor: url('../media/cursor/green-saber.png') 16 16, auto; 
-
 }
 
-.dark-side a:hover{
+.dark-side a:hover {
     cursor: url('../media/cursor/red-saber.png') 16 16, auto; 
-
 }
 
-.dark-side,
+.dark-side img,
 .light-side img {
     width: 100%;
 }
@@ -75,14 +73,18 @@ body {
 
 .dark-side-gif,
 .light-side-gif {
-    scale: 1.6;
+    transform: scale(1.6);
     z-index: -20;
-    display: none;
-
+    opacity: 0;
+    transition: opacity 2.5s ease-in-out;
 }
 
 .dark-side-img,
 .light-side-img {
     z-index: 1;
     height: 40vh;
+}
+
+.show {
+    opacity: 1 !important;
 }
