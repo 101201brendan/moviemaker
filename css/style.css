@@ -1,9 +1,9 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-image: url("../media/home-bg.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -11,51 +11,68 @@ body{
     overflow: hidden;
 }
 
-.align-center{
+.tilt {
+    display: inline-block;
+    font-size: 2em;
+    transform: perspective(800px) rotateX(30deg) scaleY(1.2);
+    transform-origin: bottom;
+}
+
+.align-center {
     display: flex;
     width: 100%;
     justify-content: center;
+    height: 45vh;
+    z-index: -1;
 }
 
-.choose-side{
+.choose-side {
     height: 45vh;
     width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 
-.choose-side img{
-    height: 100%;
+.choose-side img {
+    height: 110%;
     transition: 0.5s;
-    &:hover{
-        scale: 1.1;
+
+    &:hover {
+        scale: 1.2;
     }
 }
 
-.dark-side, .light-side{
+.dark-side,
+.light-side {
     width: 100%;
-    position: relative; 
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.dark-side, .light-side img{
+.dark-side,
+.light-side img {
     width: 100%;
 }
 
-.dark-side-img, .dark-side-gif, .light-side-gif, .light-side-img { 
-    position: absolute; 
-} 
-
-.dark-side-gif, .light-side-gif{
-    scale: 1.5;
-    z-index: -20;
-    display: none;
-    
+.dark-side-img,
+.dark-side-gif,
+.light-side-gif,
+.light-side-img {
+    position: absolute;
 }
 
-.dark-side-img, .light-side-img{ 
-    z-index: 1; 
+.dark-side-gif,
+.light-side-gif {
+    scale: 1.6;
+    z-index: -20;
+    display: none;
+
+}
+
+.dark-side-img,
+.light-side-img {
+    z-index: 1;
     height: 40vh;
-} 
+}
