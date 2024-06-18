@@ -35,10 +35,10 @@ body {
 
 .choose-side img {
     height: 110%;
-    transition: 0.5s;
+    transition: transform 0.5s ease-in-out, width 0.5s ease-in-out;
 
     &:hover {
-        scale: 1.2;
+        transform: scale(1.2);
     }
 }
 

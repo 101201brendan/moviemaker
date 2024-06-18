@@ -7,6 +7,8 @@ const lightImg = document.getElementById("lightImg")
 let imperialSound = new Audio("./media/imperial-sound.mp4");
 let resistanceSound = new Audio("./media/resistance-sound.mp4");
 
+imperialSound.volume = 0.4;
+
 darkImg.addEventListener("mouseover", (event) => {
     darkGif.style.display = "block";
     imperialSound.play();

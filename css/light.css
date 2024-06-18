@@ -26,6 +26,7 @@ button {
 .droids {
     display: flex;
     flex-direction: column;
+    align-items: center;
     margin-top: 100px;
     margin-left: 10px;
     width: 200px;    
