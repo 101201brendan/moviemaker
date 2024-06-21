@@ -1,4 +1,4 @@
-HEAD;
+
 const darkGif = document.getElementById("darkGif");
 const lightGif = document.getElementById("lightGif");
 
