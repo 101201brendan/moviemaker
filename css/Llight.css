@@ -11,6 +11,7 @@ body {
   background-attachment: fixed;
   cursor: url("../media/cursor/green-saber.png") 16 16, auto;
   font-family: starwars;
+  overflow: hidden;
 }
 
 #close {
@@ -24,13 +25,11 @@ body {
 }
 
 .may {
-  position: absolute;
+  text-align: center;
   color: white;
-  left: 32%;
 }
 
-.droids {
-  position: absolute;
+.btn {
   align-items: center;
   background-image: linear-gradient(144deg, #000000, #424242 50%, #00ddeb);
   border: 0;
@@ -53,124 +52,26 @@ body {
   touch-action: manipulation;
   white-space: nowrap;
   cursor: pointer;
-  margin-left: 10%;
-  margin-top: 20%;
   font-family: starwars;
+  scale: 1.4;
 }
 
-.droids:active,
-.droids:hover {
-  outline: 0;
-}
+.center{
 
-.droids span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
-}
-
-.droids :hover span {
-  background: none;
-}
-
-@media (min-width: 768px) {
-  .droids {
-    font-size: 24px;
-    min-width: 196px;
-  }
-}
-
-.spaceships {
-  position: absolute;
-  align-items: center;
-  background-image: linear-gradient(144deg, #000000, #424242 50%, #00ddeb);
-  border: 0;
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #ffffff;
   display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-  margin-top: 20%;
-  margin-left: 40%;
-  font-family: starwars;
-}
-
-.spaceships:active,
-.spaceships:hover {
-  outline: 0;
-}
-
-.spaceships span {
-  background-color: rgb(5, 6, 45);
-  padding: 16px 24px;
-  border-radius: 6px;
-  width: 100%;
-  height: 100%;
-  transition: 300ms;
-}
-
-.spaceships:hover span {
-  background: none;
-}
-
-@media (min-width: 768px) {
-  .spaceships {
-    font-size: 24px;
-    min-width: 196px;
-  }
-}
-
-.ground {
-  position: absolute;
+  justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(144deg, #000000, #424242 50%, #00ddeb);
-  border: 0;
-  border-radius: 8px;
-  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
-  box-sizing: border-box;
-  color: #ffffff;
-  display: flex;
-  font-family: Phantomsans, sans-serif;
-  font-size: 20px;
-  justify-content: center;
-  line-height: 1em;
-  max-width: 100%;
-  min-width: 140px;
-  padding: 3px;
-  text-decoration: none;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  white-space: nowrap;
-  cursor: pointer;
-  margin-top: 20%;
-  margin-left: 70%;
-  font-family: starwars;
+  width: 100vw;
+  height: 70vh;
 }
 
-.ground:active,
-.ground:hover {
+
+.btn:active,
+.btn:hover {
   outline: 0;
 }
 
-.ground span {
+.btn span {
   background-color: rgb(5, 6, 45);
   padding: 16px 24px;
   border-radius: 6px;
@@ -179,12 +80,12 @@ body {
   transition: 300ms;
 }
 
-.ground:hover span {
+.btn:hover span {
   background: none;
 }
 
 @media (min-width: 768px) {
-  .ground {
+  .btn {
     font-size: 24px;
     min-width: 196px;
   }
