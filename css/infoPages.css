@@ -3,17 +3,18 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  cursor: url("../media/cursor/green-saber.png") 16 16, auto;
 }
 
 /* Dark theme styles */
 body.dark {
   background-image: url(../../media/dark/background.jpg);
+  cursor: url("../media/cursor/red-saber.png") 16 16, auto;
 }
 
 /* Light theme styles */
 body.light {
   background-image: url(../../media/light/background.jpeg);
+  cursor: url("../media/cursor/green-saber.png") 16 16, auto;
 }
 
 .buttons {
