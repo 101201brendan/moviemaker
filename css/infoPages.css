@@ -7,7 +7,7 @@ body {
 
 /* Dark theme styles */
 body.dark {
-  background-image: url(../../media/dark/background.jpg);
+  background-image: url(../media/dark/background.jpg);
   cursor: url("../media/cursor/red-saber.png") 16 16, auto;
 }
 
@@ -91,6 +91,18 @@ button {
   border: solid 2px;
   border-radius: 3px;
   border-color: rgb(11, 155, 199);
+  background-color: black;
+}
+
+.dark-popup-text {
+  max-width: 20%;
+  max-height: 120%;
+  margin-left: 20px;
+  color: rgb(207, 11, 11);
+  /* Text color */
+  border: solid 2px;
+  border-radius: 3px;
+  border-color: rgb(207, 11, 11);
   background-color: black;
 }
 
