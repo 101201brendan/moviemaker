@@ -13,7 +13,7 @@ body.dark {
 
 /* Light theme styles */
 body.light {
-  background-image: url(../../media/light/background.jpeg);
+  background-image: url(../media/light/background.jpeg);
   cursor: url("../media/cursor/green-saber.png") 16 16, auto;
 }
 
